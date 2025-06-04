@@ -88,6 +88,23 @@ void loop() {
 
 # API-Übersicht
 
+## API-Befehle
+
+| Befehl                                   | Funktion                                                                                              |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `begin()`                                | Startet das komplette Modul. Im `setup()` aufrufen.                                                   |
+| `loop()`                                 | Muss im `loop()` laufen, erledigt alle Hintergrundaufgaben.                                           |
+| `addPage(menutitel, pfad, get, post)`     | Fügt einen neuen Menüpunkt und eine Seite hinzu. GET und POST sind Handler-Funktionen (siehe unten).  |
+| `removePage(pfad)`                        | Entfernt einen eigenen Menüpunkt/Seite.                                                               |
+| `saveCustomData(key, wert)`               | Speichert eigene Daten persistent (Key/Value).                                                        |
+| `loadCustomData(key, default)`            | Lädt eigene Daten (mit Default-Wert falls nicht gespeichert).                                         |
+| `reset()`                                | Löscht alle gespeicherten Einstellungen, setzt das Gerät zurück.                                      |
+
+Hinweis zu den Handler-Funktionen:
+
+- Der GET-Handler erhält einen AsyncWebServerRequest* und gibt einen HTML-Body als String zurück.
+- Der POST-Handler ist optional, gleiche Signatur.
+
 Seite (Menüpunkt) hinzufügen
 
 ```cpp

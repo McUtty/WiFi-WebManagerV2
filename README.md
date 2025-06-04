@@ -105,6 +105,21 @@ Hinweis zu den Handler-Funktionen:
 - Der GET-Handler erhält einen AsyncWebServerRequest* und gibt einen HTML-Body als String zurück.
 - Der POST-Handler ist optional, gleiche Signatur.
 
+Beispiel für die Handler-Nutzung:
+
+```cpp
+wifiWebManager.addPage(
+    "Beispiel", "/beispiel",
+    [](AsyncWebServerRequest *request) {
+        return "<h1>Beispielseite</h1>";
+    },
+    [](AsyncWebServerRequest *request) {
+        // Daten verarbeiten
+        return "<p>Erfolg!</p>";
+    }
+);
+```
+
 Seite (Menüpunkt) hinzufügen
 
 ```cpp

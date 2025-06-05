@@ -1,6 +1,6 @@
 # ESP32 WifiWebManagerV2
 
-Ein modulares Webinterface für den ESP32 mit dynamischer Seitenverwaltung, Speicher für Einstellungen und einheitlichem, responsivem Design.
+Ein modulares Webinterface Bibliothek für den ESP32 mit dynamischer Seitenverwaltung, Speicher für Einstellungen und einheitlichem, responsivem Design.
 
 ---
 

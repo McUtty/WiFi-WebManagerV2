@@ -1,4 +1,4 @@
-# ESP32 WifiWebManagerV2
+# ESP32 WifiWebManager lib
 
 Ein modulares Webinterface Bibliothek für den ESP32 mit dynamischer Seitenverwaltung, Speicher für Einstellungen und einheitlichem, responsivem Design.
 
